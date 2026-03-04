@@ -1,0 +1,239 @@
+
+/* Gallery Page */
+.gallery-page {
+  padding: 24px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+  .gallery-page {
+    padding: 18px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-page {
+    padding: 16px;
+    font-size: 13px;
+  }
+}
+
+.gallery-header h2 {
+  margin: 0 0 6px;
+}
+
+.gallery-header p {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+/* Tabs
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #222;
+  background: rgba(255,255,255,0.05);
+  color: var(--muted);
+  cursor: pointer;
+  transition: background .2s, color .2s, border-color .2s;
+}
+
+.tab.active,
+.tab:hover {
+  color: var(--text);
+  border-color: #333;
+  background: rgba(255,255,255,0.09);
+} */
+
+/* Gallery grid */
+/* .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+} */
+
+.gallery-card {
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #222;
+  background: rgba(255,255,255,0.05);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-fallback {
+  width: 100%;
+  height: 160px;
+  background:
+    linear-gradient(135deg, #2a2a2a, #1a1a1a);
+}
+
+.gallery-card figcaption {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.gallery-card figcaption span {
+  color: var(--muted);
+}
+
+
+.gallery-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.carousel-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.carousel-section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.carousel-section-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  color: var(--text);
+  padding: 0 4px;
+  letter-spacing: -0.5px;
+  align-self: start;
+}
+
+.carousel-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 12px 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 95vw;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+  padding: 0 4px;
+}
+
+.carousel-control-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.carousel-control-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.carousel-control-btn:active {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.carousel-card-checkbox-wrapper {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 10;
+}
+
+.carousel-card-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #4ade80;
+  opacity: 0.3;
+  transition: opacity 0.2s ease;
+}
+
+.carousel-card-checkbox:checked {
+  opacity: 1;
+}
+
+.carousel-notify-button {
+  margin: 24px auto 0;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #25d366, #20ba5b);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carousel-notify-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+.carousel-notify-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.whatsapp-icon {
+  font-size: 20px;
+}
+
+.whatsapp-icon img {
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,309 @@
+.cart-page {
+  padding: 24px;
+  min-height: 60vh;
+  margin: 0 auto;
+}
+
+
+
+
+.cart-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cart-items{
+  display : grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.cart-img-thumnail img{
+  object-fit: contain;
+}
+
+
+
+.cart-items__desc{
+ display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
+.item-id{
+  color: rgba(244, 244, 244, 1);
+}
+
+.remove-item{
+ justify-self: end;
+  color: rgba(162, 124, 61, 1);
+}
+
+.cart-final{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cart-total{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 25vw;
+}
+
+.cart-total__amount{
+  padding: 10px;
+  font-weight: bold;
+  border: 1px solid  var(--bg-dark-2);
+  border-radius: 10px;
+}
+
+.cart-total__label{
+  font-size: large;
+  font-weight: 800;
+  color: var(--accent);
+  padding: 15px;
+}
+
+.backToGallery{
+  background: none;
+  border: none;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+@media(max-width: 798px) {
+  .cart-img-thumnail img{
+    width: 45px;
+    height: 45px;
+  }
+
+  .cart-items__product{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .cart-items__desc{
+    font-size: small;
+   }
+}
+
+@media(min-width : 798px){
+  .cart-img-thumnail img{
+    width: 60px;
+    height: 60px;
+  }
+
+  .cart-items__product{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+   }
+
+   .cart-items__desc{
+    align-items: flex-start; 
+    justify-content: flex-end;
+   }
+}
+
+
+.confirm__label{
+    font-size: large;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--accent);
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #e1dede;
+}
+
+.confirm_form{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px 24px;
+  align-items: center;
+  width: 50vw;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(244, 244, 244, 0.05) 0%, rgba(162, 124, 61, 0.05) 100%);
+  border: 1px solid rgba(162, 124, 61, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.confirm_form label {
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.confirm_form input {
+  padding: 12px 16px;
+  border: 2px solid rgba(162, 124, 61, 0.3);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #f4f4f4;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.confirm_form input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 3px rgba(162, 124, 61, 0.2);
+}
+
+.confirm_form input::placeholder {
+  color: rgba(244, 244, 244, 0.5);
+}
+
+.confirm_form button,
+ .share-controls button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, var(--accent) 0%, #c9925c 100%);
+  color: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(162, 124, 61, 0.3);
+  margin-top: 8px;
+}
+
+.confirm_form button:hover,
+.share-controls button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(162, 124, 61, 0.4);
+}
+
+.confirm_form button:active,
+.share-controls button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(162, 124, 61, 0.3);
+}
+
+@media(max-width: 768px) {
+  .confirm_form {
+    width: 80vw;
+    padding: 20px;
+    gap: 12px 16px;
+  }
+  
+  .confirm_form label {
+    font-size: 12px;
+  }
+  
+  .confirm_form input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  
+  .confirm_form button {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
+
+.confirm_via_whatsApp img{
+  width: 28px;
+  height: 28px;
+  margin-left: 8px;
+}
+
+.cart_actions{
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  }
+  
+/* Order Summary Share Controls */
+.share-controls {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  max-width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(244, 244, 244, 0.05) 0%, rgba(162, 124, 61, 0.05) 100%);
+  border: 1px solid rgba(162, 124, 61, 0.2);
+}
+
+
+.copy-link-btn button{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-timestamp {
+  text-align: center;
+  color: rgba(244, 244, 244, 0.6);
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+@media(max-width: 768px) {
+  .share-controls {
+    width: 80vw;
+    padding: 16px;
+    max-width: 100%;
+  }
+
+  .copy-link-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+}
+
+ 
+/* Form Validation Styles */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.error-message {
+  color: #ff6b6b;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 2px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.confirm_form input.error {
+  border-color: #ff6b6b !important;
+  background-color: rgba(255, 107, 107, 0.1);
+}
+
+.confirm_form input.error:focus {
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.2) !important;
+}
+

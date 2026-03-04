@@ -1,0 +1,325 @@
+[
+  {
+    "id": "mementos",
+    "name": "Wooden Mementos",
+    "tagline": "Mark milestones with handcrafted keepsakes.",
+    "cover": "https://5.imimg.com/data5/ZN/EY/VE/SELLER-6235191/wooden-momentos-1000x1000.jpg",
+    "description": "Curated wooden mementos that honor moments and achievements.",
+    "items": [
+      {
+        "id": "m1",
+        "title": "4x6 inch",
+        "cardSizeinPx": "200px",
+        "images": [
+          {
+            "id": "4x6-1",
+            "src": "/images/4x6/image1.jpg",
+            "alt": "Memento 4x6 1",
+            "price": "60.99",
+            "tags": []
+          },
+          {
+            "id": "4x6-2",
+            "src": "/images/4x6/image2.jpg",
+            "alt": "Memento 4x6 2",
+            "price": "40.99",
+            "tags": []
+          },
+          {
+            "id": "4x6-3",
+            "src": "/images/4x6/image3.jpg",
+            "alt": "Memento 4x6 3",
+            "price": "19.99",
+            "tags": []
+          },
+           {
+            "id": "4x6-4",
+            "src": "/images/4x6/image4.jpg",
+            "alt": "Memento 4x6 3",
+            "price": "19.99",
+            "tags": []
+          },
+           {
+            "id": "4x6-5",
+            "src": "/images/4x6/image3.jpg",
+            "alt": "Memento 4x6 3",
+            "price": "19.99",
+            "tags": []
+          },
+           {
+            "id": "4x6-6",
+            "src": "/images/4x6/image3.jpg",
+            "alt": "Memento 4x6 3",
+            "price": "19.99",
+            "tags": []
+          },
+           {
+            "id": "4x6-7",
+            "src": "/images/4x6/image3.jpg",
+            "alt": "Memento 4x6 3",
+            "price": "19.99",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "cardSizeinPx": "200px",
+        "title": "5x9 inch",
+        "images": [
+          {
+            "id": "5x9-1",
+            "src": "/images/5x9/image1.jpg",
+            "alt": "Memento 5x9 1",
+            "price": "19.99",
+            "tags": []
+          },
+          {
+            "id": "5x9-2",
+            "src": "/images/5x9/image2.jpg",
+            "alt": "Memento 5x9 2",
+            "price": "19.99",
+            "tags": [
+              "latest"
+            ]
+          },
+          {
+            "id": "5x9-3",
+            "src": "/images/5x9/image3.jpg",
+            "alt": "Memento 5x9 3",
+            "price": "19.99",
+            "tags": []
+          },
+          {
+            "id": "5x9-4",
+            "src": "/images/5x9/image4.jpg",
+            "alt": "Memento 5x9 4",
+            "price": "19.99",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "m3",
+        "title": "10x15 inch",
+        "cardSizeinPx": "200px",
+        "images": [
+          {
+            "id": "10x15-1",
+            "src": "/images/10x15/image1.jpg",
+            "alt": "Memento 10x15 1",
+            "price": "19.99",
+            "tags": []
+          },
+          {
+            "id": "10x15-2",
+            "src": "/images/10x15/image2.jpg",
+            "alt": "Memento 10x15 2",
+            "price": "19.99",
+            "tags": []
+          },
+          {
+            "id": "10x15-3",
+            "src": "/images/10x15/image3.jpg",
+            "alt": "Memento 10x15 3",
+            "price": "19.99",
+            "tags": []
+          },
+          {
+            "id": "10x15-4",
+            "src": "/images/10x15/image4.jpg",
+            "alt": "Memento 10x15 4",
+            "price": "19.99",
+            "tags": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gifts",
+    "name": "Gift Articles",
+    "tagline": "Thoughtful, personalized wooden gifts.",
+    "cover": "images/crafts.avif",
+    "description": "Unique gift pieces that blend utility with artistry.",
+    "items": [
+      {
+        "id": "g1",
+        "title": "Desk Organizer",
+        "cardSizeinPx": "200px",
+        "images": [
+          {
+            "id": "g1-1",
+            "src": "/images/organizers/image1.jpg",
+            "alt": "Desk Organizer 1",
+            "price": "29.99",
+            "tags": []
+          },
+          {
+            "id": "g1-2",
+            "src": "/images/organizers/image2.jpg",
+            "alt": "Desk Organizer 2",
+            "price": "29.99",
+            "tags": []
+          },
+          {
+            "id": "g1-3",
+            "src": "/images/organizers/image3.jpg",
+            "alt": "Desk Organizer 3",
+            "price": "29.99",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "g2",
+        "title": "Coaster Set",
+        "cardSizeinPx": "200px",
+        "images": [
+          {
+            "id": "g2-1",
+            "src": "/images/coasters/image1.jpg",
+            "alt": "Coaster Set 1",
+            "price": "15.99",
+            "tags": []
+          },
+          {
+            "id": "g2-2",
+            "src": "/images/coasters/image2.jpg",
+            "alt": "Coaster Set 2",
+            "price": "15.99",
+            "tags": []
+          },
+          {
+            "id": "g2-3",
+            "src": "/images/coasters/image3.jpg",
+            "alt": "Coaster Set 3",
+            "price": "15.99",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "g3",
+        "title": "Nameplate",
+        "cardSizeinPx": "200px",
+        "images": [
+          {
+            "id": "g3-1",
+            "src": "/images/nameplates/image1.jpg",
+            "alt": "Nameplate 1",
+            "price": "34.99",
+            "tags": []
+          },
+          {
+            "id": "g3-2",
+            "src": "/images/nameplates/image2.jpg",
+            "alt": "Nameplate 2",
+            "price": "34.99",
+            "tags": []
+          },
+          {
+            "id": "g3-3",
+            "src": "/images/nameplates/image3.jpg",
+            "alt": "Nameplate 3",
+            "price": "34.99",
+            "tags": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wedding",
+    "name": "Custom Wedding Cards",
+    "tagline": "Bespoke invitations, crafted with care.",
+    "cover": "images/wedding.jpg",
+    "description": "Personalized wedding cards with premium materials and finishes.",
+    "items": [
+      {
+        "id": "w1",
+        "title": "Floral Engrave",
+        "cardSizeinPx": "200px",
+        "images": [
+          {
+            "id": "w1-1",
+            "src": "/images/flora/image1.jpg",
+            "alt": "Floral Engrave - Matte finish 1",
+            "price": "45.99",
+            "tags": []
+          },
+          {
+            "id": "w1-2",
+            "src": "/images/flora/image2.jpg",
+            "alt": "Floral Engrave - Matte finish 2",
+            "price": "45.99",
+            "tags": []
+          },
+          {
+            "id": "w1-3",
+            "src": "/images/flora/image3.jpg",
+            "alt": "Floral Engrave - Matte finish 3",
+            "price": "45.99",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "w2",
+        "title": "Classic Monogram",
+        "cardSizeinPx": "200px",
+        "images": [
+          {
+            "id": "w2-1",
+            "src": "/images/monogram/image1.jpg",
+            "alt": "Classic Monogram - Foil accents 1",
+            "price": "52.99",
+            "tags": []
+          },
+          {
+            "id": "w2-2",
+            "src": "/images/monogram/image2.jpg",
+            "alt": "Classic Monogram - Foil accents 2",
+            "price": "52.99",
+            "tags": []
+          },
+          {
+            "id": "w2-3",
+            "src": "/images/monogram/image3.jpg",
+            "alt": "Classic Monogram - Foil accents 3",
+            "price": "52.99",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "w3",
+        "title": "Minimal Luxe",
+        "cardSizeinPx": "200px",
+        "images": [
+          {
+            "id": "w3-1",
+            "src": "/images/luxe/image1.jpg",
+            "alt": "Minimal Luxe - Textured stock 1",
+            "price": "58.99",
+            "tags": []
+          },
+          {
+            "id": "w3-2",
+            "src": "/images/luxe/image2.jpg",
+            "alt": "Minimal Luxe - Textured stock 2",
+            "price": "58.99",
+            "tags": []
+          },
+          {
+            "id": "w3-3",
+            "src": "/images/luxe/image3.jpg",
+            "alt": "Minimal Luxe - Textured stock 3",
+            "price": "58.99",
+            "tags": []
+          }
+        ]
+      }
+    ]
+  }
+]
