@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import {HashRouter } from 'react-router-dom'
 import App from './App.jsx'
 import { DataProvider } from './context/DataContext.jsx'
 import CartProvider from './context/CartContext.jsx'
@@ -18,12 +18,12 @@ library.add(fas, far, fab)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter basename="/sk_web/">
       <DataProvider>
         <CartProvider>
           <App />
         </CartProvider>
       </DataProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 )
