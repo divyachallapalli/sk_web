@@ -1,6 +1,7 @@
 
 import './Card.css'
 import CheckoutCntrls from './CheckoutCntrls'
+import { getImageUrl } from '../utils/imageLoader'
 
 export default function Card({ item }) {
 
@@ -9,7 +10,7 @@ export default function Card({ item }) {
     <figure key={item.id ? `card-${item.id}` : undefined } className="card-view">
       <div className="card-view-image">
         {item.src ? (
-          <img src={item.src} alt={item.alt} />
+          <img src={getImageUrl(item.src)} alt={item.alt} />
         ) : (
           <div className="image-fallback" />
         )}

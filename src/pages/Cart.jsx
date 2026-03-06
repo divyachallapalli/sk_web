@@ -6,6 +6,7 @@ import CheckoutCntrls from '../components/CheckoutCntrls'
 import { FaChevronCircleLeft,FaCopy, FaCheck } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { encodeCartData, generateShareableLink,formatCartForWhatsapp } from '../utils/cartEncoder'
+import { getBaseUrl, getImageUrl } from '../utils/imageLoader'
 
 export default function Cart(){
     const {cart,removeFromCart,getCartTotal,getCartCountById}=useCart()
@@ -52,14 +53,14 @@ export default function Cart(){
         if (!validateForm()) return
         if (!cart) return
         const phoneNumber = '918121213090'
-        const message =formatCartForWhatsapp(cart, getCartTotal(), generateShareableLink(window.location.origin, encodeCartData(cart, getCartTotal()),formData.name,formData.email),formData)
+        const message =formatCartForWhatsapp(cart, getCartTotal(), generateShareableLink(getBaseUrl(), encodeCartData(cart, getCartTotal()),formData.name,formData.email),formData)
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
         window.open(whatsappUrl, '_blank')
     }
 
     const handleCopyLink = () => {
         if (!validateForm()) return
-        navigator.clipboard.writeText(generateShareableLink(window.location.origin, encodeCartData(cart, getCartTotal()),formData.name,formData.email))
+        navigator.clipboard.writeText(generateShareableLink(getBaseUrl(), encodeCartData(cart, getCartTotal()),formData.name,formData.email))
         setCopied(true)
         setTimeout(() => setCopied(false), 2000)
     }
@@ -151,7 +152,7 @@ export default function Cart(){
                                                 {copied ? 'Link Copied!' : 'Copy Link'}
                                             </button>
                         <button className='print-cart-btn' onClick={print}><FaPrint size={18}/>Print Cart</button>
-                        <button className='confirm_via_whatsApp' onClick={sendViaWhatsapp}><img src='images/whatsapp.png' alt="whatsapp logo"/>Confirm</button>
+                        <button className='confirm_via_whatsApp' onClick={sendViaWhatsapp}><img src={getImageUrl('images/whatsapp.png')} alt="whatsapp logo"/>Confirm</button>
                       </div>
                     </div>
                 </>

@@ -3,6 +3,7 @@ import { useData } from '../context/DataContext.jsx'
 import './CoverPage.css'
 import useMediaQuery from '../customhooks/useMediaQueres.js'
 import ImageSwiper from '../components/ImageSwiper.jsx'
+import { getImageUrl } from '../utils/imageLoader.js'
 
 export default function CoverPage({menuOpen}) {
   const navigate = useNavigate()
@@ -45,7 +46,7 @@ export default function CoverPage({menuOpen}) {
             <div className="card-media">
               {/* Fallback color block if image not available */}
               {cat.cover ? (
-                <img src={cat.cover} alt={cat.name} />
+                <img src={getImageUrl(cat.cover)} alt={cat.name} />
               ) : (
                 <div className="cover-fallback" />
               )}

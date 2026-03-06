@@ -7,6 +7,7 @@ import OrderSummary from './pages/OrderSummary.jsx'
 import {FaHeart ,FaCartArrowDown,FaBars,FaEyeSlash} from 'react-icons/fa'
 import  { useState } from "react";
 import  useMediaQuery from './customhooks/useMediaQueres.js'
+import { getImageUrl } from './utils/imageLoader'
 
 import './App.css'
 import Mainnav from './components/mainnav.jsx';
@@ -23,7 +24,7 @@ export default function App() {
     <div className="app">
       <header className="app-header">
         <img
-          src="/logo.png"
+          src={getImageUrl('logo.png')}
           alt="SK Logo"
           className="logo"
           onError={(e) => (e.currentTarget.style.display = 'none')}

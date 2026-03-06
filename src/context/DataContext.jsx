@@ -6,12 +6,13 @@ export function DataProvider({ children }) {
   const [categories, setCategories] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
+  const baseUrl = import.meta.env.BASE_URL || '/'
 
   useEffect(() => {
     const loadMetadata = async () => {
       try {
         setLoading(true)
-        const response = await fetch('/metadata.json')
+        const response = await fetch(`${baseUrl}metadata.json`)
         if (!response.ok) {
           throw new Error(`Failed to load metadata: ${response.statusText}`)
         }

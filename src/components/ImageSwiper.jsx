@@ -3,6 +3,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination"; 
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
+import { getImageUrl } from "../utils/imageLoader"
 
 
 export default function ImageSwiper() {
@@ -32,14 +33,14 @@ export default function ImageSwiper() {
             modules={[Autoplay,EffectCoverflow, Pagination]}
             className="image-swiper-slot"
           >
-            <SwiperSlide><img src="images/carousel1.jpg" alt="Slide 1" /></SwiperSlide>
-            <SwiperSlide><img src="images/carousel2.png" alt="Slide 2" /></SwiperSlide>
-            <SwiperSlide><img src="images/carousel3.jpg" alt="Slide 3" /></SwiperSlide>
-            <SwiperSlide><img src="images/carousel3.jpg" alt="Slide 3" /></SwiperSlide>
-            <SwiperSlide><img src="images/carousel2.jpg" alt="Slide 2" /></SwiperSlide>
-            <SwiperSlide><img src="images/carousel3.jpg" alt="Slide 3" /></SwiperSlide>
-            <SwiperSlide><img src="images/carousel1.jpg" alt="Slide 1" /></SwiperSlide>
-            <SwiperSlide><img src="images/carousel3.jpg" alt="Slide 3" /></SwiperSlide>
+            <SwiperSlide><img src={getImageUrl('images/carousel1.jpg')} alt="Slide 1" /></SwiperSlide>
+            <SwiperSlide><img src={getImageUrl('images/carousel2.png')} alt="Slide 2" /></SwiperSlide>
+            <SwiperSlide><img src={getImageUrl('images/carousel3.jpg')} alt="Slide 3" /></SwiperSlide>
+            <SwiperSlide><img src={getImageUrl('images/carousel3.jpg')} alt="Slide 3" /></SwiperSlide>
+            <SwiperSlide><img src={getImageUrl('images/carousel2.jpg')} alt="Slide 2" /></SwiperSlide>
+            <SwiperSlide><img src={getImageUrl('images/carousel3.jpg')} alt="Slide 3" /></SwiperSlide>
+            <SwiperSlide><img src={getImageUrl('images/carousel1.jpg')} alt="Slide 1" /></SwiperSlide>
+            <SwiperSlide><img src={getImageUrl('images/carousel3.jpg')} alt="Slide 3" /></SwiperSlide>
           </Swiper>
         </div>
     )

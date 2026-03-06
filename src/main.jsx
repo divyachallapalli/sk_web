@@ -18,7 +18,7 @@ library.add(fas, far, fab)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <HashRouter basename="/sk_web/">
+    <HashRouter>
       <DataProvider>
         <CartProvider>
           <App />
