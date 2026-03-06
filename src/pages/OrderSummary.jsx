@@ -5,6 +5,7 @@ import { decodeCartData } from '../utils/cartEncoder'
 import { useEffect, useState } from 'react'
 import { FaPrint } from 'react-icons/fa6'
 import { useCart } from '../context/CartContext'
+import { getImageUrl } from '../utils/imageLoader'
 
 export default function OrderSummary(){
     const [searchParams] = useSearchParams()
@@ -56,7 +57,7 @@ export default function OrderSummary(){
                     <div className="cart-items" key={idx}>
                         <div className="cart-items__product">
                             <div className='cart-img-thumnail'>
-                                <img src={item.thumbnail} alt=""/>
+                                <img src={getImageUrl(item.thumbnail)} alt=""/>
                             </div>
                             <div className="cart-items__desc">
                                 <div className="item-id">{item.id}</div>
