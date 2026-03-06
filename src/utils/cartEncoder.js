@@ -27,7 +27,7 @@ export const decodeCartData = (encodedData) => {
 };
 
 export const generateShareableLink = (baseUrl, encodedCartData,name,email) => {
-  return `${window.location.origin}/${baseUrl}order-summary?data=${encodedCartData}&name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}`;
+  return `${window.location.origin}${baseUrl}#/order-summary?data=${encodedCartData}&name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}`;
 };
 
 export const formatCartForWhatsapp = (cartItems, cartTotal, shareableLink,formData) => {
