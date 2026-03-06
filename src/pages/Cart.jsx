@@ -81,7 +81,7 @@ export default function Cart(){
                     <div className="cart-items">
                      <div className="cart-items__product">
                       <div className='cart-img-thumnail'>
-                          <img src={item.thumbnail} alt=""/>
+                          <img src={getImageUrl(item.thumbnail)} alt=""/>
                         </div>
                         <div className="cart-items__desc">
                           <div className="item-id">{item.id}</div>
